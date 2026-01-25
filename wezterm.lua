@@ -7,9 +7,8 @@ config.line_height = 1.12
 config.freetype_load_target = "Light"
 config.freetype_render_target = "HorizontalLcd"
 
--- Window look (2026 glass style)
+-- Window
 config.window_background_opacity = 0.86
-config.macos_window_background_blur = 25 -- safe even if you're not on mac
 config.text_background_opacity = 1.0
 
 config.window_padding = {
@@ -22,12 +21,12 @@ config.window_padding = {
 config.window_decorations = "NONE"
 config.enable_scroll_bar = false
 
--- Cursor (BLINKING FIX)
+-- Cursor
 config.cursor_blink_rate = 500
 config.default_cursor_style = "BlinkingBlock"
 config.force_reverse_video_cursor = false
 
--- Colors (Catppuccin-ish + IJSKOUD blue accent)
+-- Colors
 config.colors = {
   foreground = "#d4d4d4",
   background = "#0f1115",
@@ -85,7 +84,7 @@ config.tab_bar_at_bottom = true
 config.hide_tab_bar_if_only_one_tab = true
 config.tab_max_width = 28
 
--- Keybindings (keep yours)
+-- Keybindings
 config.keys = {
   { key = 'c', mods = 'CTRL', action = wezterm.action.CopyTo 'Clipboard' },
   { key = 'v', mods = 'CTRL', action = wezterm.action.PasteFrom 'Clipboard' },
@@ -112,7 +111,7 @@ config.visual_bell = {
   fade_out_duration_ms = 0,
 }
 
--- Performance (WebGPU = FAST)
+-- Performance
 config.front_end = "WebGpu"
 config.max_fps = 144
 config.animation_fps = 144
