@@ -7,9 +7,8 @@ config.line_height = 1.12
 config.freetype_load_target = "Light"
 config.freetype_render_target = "HorizontalLcd"
 
--- Window look (2026 glass style)
-config.window_background_opacity = 0.86
-config.macos_window_background_blur = 25 -- safe even if you're not on mac
+-- Window
+config.window_background_opacity = 0.8
 config.text_background_opacity = 1.0
 
 config.window_padding = {
@@ -22,7 +21,7 @@ config.window_padding = {
 config.window_decorations = "NONE"
 config.enable_scroll_bar = false
 
--- Cursor (BLINKING FIX)
+-- Cursor
 config.cursor_blink_rate = 500
 config.default_cursor_style = "BlinkingBlock"
 config.force_reverse_video_cursor = false
@@ -59,7 +58,7 @@ config.colors = {
     "#94e2d5",
     "#a6adc8",
   },
-
+-- Tabbar
   tab_bar = {
     background = "#0f1115",
     active_tab = {
@@ -78,14 +77,12 @@ config.colors = {
     },
   },
 }
-
--- Tab bar
 config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = true
 config.hide_tab_bar_if_only_one_tab = true
 config.tab_max_width = 28
 
--- Keybindings (keep yours)
+-- Keybindings
 config.keys = {
   { key = 'c', mods = 'CTRL', action = wezterm.action.CopyTo 'Clipboard' },
   { key = 'c', mods = 'ALT', action = wezterm.action.SendString '\x15\r' },
@@ -106,14 +103,14 @@ config.keys = {
 config.initial_cols = 120
 config.initial_rows = 35
 
--- No bells
+-- Disables the bells
 config.audible_bell = "Disabled"
 config.visual_bell = {
   fade_in_duration_ms = 0,
   fade_out_duration_ms = 0,
 }
 
--- Performance (WebGPU = FAST)
+-- Performance
 config.front_end = "WebGpu"
 config.max_fps = 144
 config.animation_fps = 144
