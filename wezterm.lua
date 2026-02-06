@@ -84,8 +84,8 @@ config.tab_max_width = 28
 
 -- Keybindings
 config.keys = {
-  { key = 'c', mods = 'CTRL', action = wezterm.action.CopyTo 'Clipboard' },
-  { key = 'c', mods = 'ALT', action = wezterm.action.SendString '\x15\r' },
+-- { key = 'c', mods = 'CTRL', action = wezterm.action.CopyTo 'Clipboard' },
+-- { key = 'c', mods = 'ALT', action = wezterm.action.SendString '\x15\r' },
   { key = 'v', mods = 'CTRL', action = wezterm.action.PasteFrom 'Clipboard' },
   { key = 'r', mods = 'CTRL|SHIFT', action = wezterm.action.ReloadConfiguration },
   { key = 't', mods = 'CTRL', action = wezterm.action.SpawnTab 'CurrentPaneDomain' },
@@ -93,8 +93,8 @@ config.keys = {
   { key = 'Tab', mods = 'CTRL', action = wezterm.action.ActivateTabRelative(1) },
   { key = 'LeftArrow', mods = 'CTRL', action = wezterm.action.ActivateTabRelative(-1) },
   { key = 'RightArrow', mods = 'CTRL', action = wezterm.action.ActivateTabRelative(1) },
-  { key = '+', mods = 'CTRL|SHIFT', action = wezterm.action.IncreaseFontSize },
-  { key = '-', mods = 'CTRL|SHIFT', action = wezterm.action.DecreaseFontSize },
+-- { key = '+', mods = 'CTRL|SHIFT', action = wezterm.action.IncreaseFontSize },
+-- { key = '-', mods = 'CTRL|SHIFT', action = wezterm.action.DecreaseFontSize },
   { key = 'f', mods = 'CTRL', action = wezterm.action.ToggleFullScreen },
   { key = 'q', mods = 'CTRL', action = wezterm.action.QuitApplication },
 }
